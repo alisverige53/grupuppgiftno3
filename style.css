@@ -1,13 +1,14 @@
-/* Färger och andra värden som används på hela sidan */
+/* Färger och andra värden som används på hela sidan.
+   Färgerna är hämtade från butikens webbplats phoniva.se */
 :root {
-    --main-color: #245c73;
-    --accent-color: #f2b84b;
-    --accent-dark: #8a5d00;
-    --background-color: #f4f7f8;
+    --main-color: #253993;       /* mörkblå */
+    --accent-color: #ffdd00;     /* gul */
+    --highlight-color: #9d0097;  /* lila */
+    --background-color: #f9faff;
     --surface-color: #ffffff;
-    --card-color: #eef5f7;
-    --text-color: #222222;
-    --muted-color: #4a5560;
+    --card-color: #dadeef;
+    --text-color: #1a1a1a;
+    --muted-color: #3d4657;
 
     --font: Arial, Helvetica, sans-serif;
     --radius: 8px;
@@ -115,12 +116,12 @@ a {
 
 a:hover,
 a:focus {
-    color: var(--accent-dark);
+    color: var(--highlight-color);
     text-decoration: underline;
 }
 
 .icon {
-    color: var(--accent-color);
+    color: var(--highlight-color);
     font-size: 20px;
 }
 
