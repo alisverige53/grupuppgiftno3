@@ -106,7 +106,7 @@ vidareutvecklingen. Bocka av tillsammans innan ni redovisar.
 - [x] Sidfot med teamets namn
 - [x] Lista över vad vi vill lära oss
 - [x] Minst en länk och en ikon
-- [ ] Kort presentation av teamet – texten är inte skriven än
+- [x] Kort presentation av teamet
 - [ ] Presentation av varje gruppmedlem – texterna är inte skrivna än
 
 ### HTML-struktur
