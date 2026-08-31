@@ -123,6 +123,6 @@ annars försvinner arbetet när sessionen avslutas.
 | Namn | GitHub |
 | --- | --- |
 | Ali Asgari | [@alisverige53](https://github.com/alisverige53) |
-| | |
-| | |
+| Leo Sawbridge | |
+| Peter Arvidsson | |
 | | |
