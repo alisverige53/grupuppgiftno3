@@ -95,14 +95,88 @@ Om ni vill sitta och koda i samma fil samtidigt kan ni använda tillägget
 Kom ihåg att den som är värd måste committa och pusha koden efteråt –
 annars försvinner arbetet när sessionen avslutas.
 
-## Kvar att göra
+## Checklista för uppgifterna
 
-- [ ] Skriva rubriken i `<h1>` i sidhuvudet
-- [ ] Skriva en presentation av teamet
-- [ ] Fylla i namn och presentation för varje gruppmedlem
-- [ ] Skriva texten i sidfoten
-- [ ] Göra sidan responsiv med media queries
-- [ ] Kontrollera att sidan fungerar på mobil
+Listan slår ihop kraven från båda uppgifterna – grunduppgiften och
+vidareutvecklingen. Bocka av tillsammans innan ni redovisar.
+
+### Innehåll på sidan
+
+- [x] Sidhuvud med teamets namn
+- [x] Sidfot med teamets namn
+- [x] Lista över vad vi vill lära oss
+- [x] Minst en länk och en ikon
+- [ ] Kort presentation av teamet – texten är inte skriven än
+- [ ] Presentation av varje gruppmedlem – texterna är inte skrivna än
+
+### HTML-struktur
+
+- [x] `header`, `main`, `section`, `footer` används
+- [x] `article` för varje gruppmedlem
+- [x] Sidan har bara en `h1`
+- [x] Rubrikerna kommer i logisk ordning: `h1` till `h2` till `h3`
+- [x] Alla medlemskort har samma struktur
+- [x] CSS-klasser används där flera element ska se likadana ut
+
+### Medlemskort
+
+- [x] Namn, presentation och en kunskap eller ett intresse
+- [x] Bakgrundsfärg
+- [x] Padding
+- [x] Kant och rundade hörn
+
+### Flexbox
+
+- [x] `display: flex`
+- [x] `gap`
+- [x] `flex-wrap`
+- [ ] Testat i ett smalt fönster – korten ska hamna på en ny rad
+
+### Enhetlig design
+
+- [x] CSS-variabler för bakgrundsfärg, textfärg och accentfärg
+- [x] Gemensamt typsnitt för hela sidan
+- [x] Tydliga mellanrum
+- [x] Läsbara färgkontraster
+- [x] Länken ändrar utseende vid `:hover`
+- [x] Ingen oanvänd CSS
+
+### Sista kontrollen
+
+- [ ] Är all text läsbar?
+- [ ] Fungerar länken?
+- [ ] Är rubrikerna logiskt ordnade?
+- [ ] Ser medlemskorten enhetliga ut?
+- [ ] Fungerar sidan i ett smalt webbläsarfönster?
+
+## Inför redovisningen
+
+Vi ska visa sidan för klassen och berätta kort om fem saker.
+Skriv era svar här innan redovisningen.
+
+**Hur fördelade vi arbetet?**
+
+> Skriv här vem som gjorde vad.
+
+**Hur strukturerade vi sidan?**
+
+> Tips: `header` med teamets namn, `main` med fyra `section`, en `article`
+> per gruppmedlem och en `footer`. Klasser i stället för styling på taggar.
+
+**Hur använde vi Flexbox?**
+
+> Tips: behållaren `.members` har `display: flex`, `gap` och `flex-wrap`.
+> Varje kort har `flex: 1 1 240px`, vilket betyder att kortet får vara
+> 240 px brett men både växa och krympa. När fönstret blir smalt radbryts
+> korten i stället för att sticka utanför sidan.
+
+**Något som fungerade bra?**
+
+> Skriv här.
+
+**Något som var svårt eller som vi vill förbättra?**
+
+> Skriv här.
 
 ## Vad vi lär oss i projektet
 
