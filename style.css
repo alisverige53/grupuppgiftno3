@@ -1,14 +1,20 @@
 /* Färger och andra värden som används på hela sidan.
-   Färgerna är hämtade från butikens webbplats phoniva.se */
+   Färgerna är hämtade från butikens webbplats phoniva.se,
+   som har mörk bakgrund och lila profilfärg. */
 :root {
     --main-color: #9d0097;       /* lila, butikens huvudfärg */
-    --accent-color: #e92ef7;     /* ljus magenta */
-    --highlight-color: #6a0068;  /* mörk lila */
-    --background-color: #faf6fb;
-    --surface-color: #ffffff;
-    --card-color: #f9ecf9;
-    --text-color: #1a1a1a;
-    --muted-color: #524356;
+    --deep-color: #3d0050;       /* mörk lila, slutet på toningen */
+    --accent-color: #e92ef7;     /* ljus magenta, syns mot mörk bakgrund */
+    --highlight-color: #f77dff;  /* ljusare magenta, länk vid hover */
+
+    --background-color: #0b0711; /* nästan svart */
+    --surface-color: #171122;    /* yta för sektionerna */
+    --card-color: #221733;       /* yta för medlemskorten */
+    --border-color: #33254d;     /* tunn kant runt sektionerna */
+
+    --text-color: #f2eef7;       /* ljus brödtext */
+    --muted-color: #b9aecb;      /* dämpad text */
+    --light-text: #ffffff;       /* text på lila bakgrund */
 
     --font: Arial, Helvetica, sans-serif;
     --radius: 8px;
@@ -32,8 +38,8 @@ body {
 .header {
     padding: 40px var(--space);
     text-align: center;
-    color: var(--surface-color);
-    background: linear-gradient(135deg, var(--main-color), var(--highlight-color));
+    color: var(--light-text);
+    background: linear-gradient(135deg, var(--main-color), var(--deep-color));
     border-bottom: 4px solid var(--accent-color);
 }
 
@@ -58,12 +64,13 @@ main {
     margin-bottom: var(--space);
     padding: 25px;
     background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius);
 }
 
 h2 {
     margin-top: 0;
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 /* Medlemskorten placeras med flexbox */
@@ -83,7 +90,7 @@ h2 {
 
 .member-name {
     margin: 0 0 10px;
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 .member-text {
@@ -110,7 +117,7 @@ h2 {
 
 /* Länkar */
 a {
-    color: var(--main-color);
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -121,7 +128,7 @@ a:focus {
 }
 
 .icon {
-    color: var(--main-color);
+    color: var(--accent-color);
     font-size: 20px;
 }
 
@@ -129,7 +136,7 @@ a:focus {
 .footer {
     padding: var(--space);
     text-align: center;
-    color: var(--surface-color);
+    color: var(--light-text);
     background-color: var(--main-color);
 }
 
